@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8">
+    <title>Multiplication Table Generator</title>
+</head>
+<body>
+
+    <h1>Create a Multiplication Table</h1>
+
+     <form method="POST">
+        Enter a number: 
+        <input type="number" name="size" required>
+        <input type="submit" value="Generate">
+    </form>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $size = intval($_POST['size']);
+
+        echo "<br><table border='1'>";
+
+        // Print the top column indexes
+        echo "<tr>";
+        echo "<td> </td>"; // Empty corner cell
+        for ($col = 1; $col <= $size; $col++) {
+            echo "<td><b>$col</b></td>";
+        }
+        echo "</tr>";
+
+        // Print rows
+        for ($row = 1; $row <= $size; $row++) {
+            echo "<tr>";
+            
+            // Print the row index
+            echo "<td><b>$row</b></td>";
+
+            for ($col = 1; $col <= $size; $col++) {
+                echo "<td>" . ($row * $col) . "</td>";
+            }
+            echo "</tr>";
+        }
+        echo "</table>";
+    }
+    ?>
+
+</body>
+</html>

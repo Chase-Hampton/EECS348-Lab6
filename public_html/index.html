@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>EECS 348 Lab Six Index</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: whitesmoke;
+            color: darkslategrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            max-width: 450px;
+            width: 90%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #4a4a4a;
+            margin-bottom: 0.5rem;
+            font-size: 1.8rem;
+        }
+
+        .subtitle {
+            color: darkslategray;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            background-color: skyblue;
+            color: white;
+            padding: 14px;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(59, 130, 246, 0.2);
+        }
+
+        .nav-links a:hover {
+            background-color: teal;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(59, 130, 246, 0.3)
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>EECS 348 Lab Six</h1>
+        <p class="subtitle">Welcome to the Lab 6 Practice Index.<br>Select a practice to view the implementation.</p>
+
+        <nav class="nav-links">
+            <a href="practice1.html">Practice 1: EECS Profile</a>
+            <a href="practice2.html">Practice 2: Font Control</a>
+            <a href="practice3.html">Practice 3: Password Verification</a>
+            <a href="practice4.html">Practice 4: Multiplication Table</a>
+        </nav>
+    </div>
+</body>
+</html>
